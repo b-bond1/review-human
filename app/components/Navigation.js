@@ -1,1 +1,15 @@
-import React from 'react';\nimport { Link } from 'react-router-dom';\nimport './Navigation.css';\n\nconst Navigation = () => {\n    return (\n        <nav className="navbar">\n            <ul>\n                <li><Link to="/">Home</Link></li>\n                <li><Link to="/categories">Categories</Link></li>\n                <li><Link to="/reviews">Reviews</Link></li>\n            </ul>\n        </nav>\n    );\n};\n\nexport default Navigation;
+import React from 'react';
+import Link from 'next/link';
+import './Navigation.css';
+const Navigation = () => {
+    return (
+        <nav className="navbar">
+            <ul>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/categories">Categories</Link></li>
+                <li><Link href="/reviews">Reviews</Link></li>
+            </ul>
+        </nav>
+    );
+};
+export default Navigation;
